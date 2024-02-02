@@ -1,0 +1,187 @@
+
+body{
+  background-color: #08125D;
+}
+
+div#interface{
+  background-color: #94E1F9;
+  width: auto;
+  margin: 20px 20px 20px 20px;
+  border-radius: 5px;
+  border: 4px solid #06BEDB;
+  box-shadow: 0px 0px 10px #06BEDB;/*sombra da div*/
+  padding:auto; /*margem da div*/
+}
+
+img#foto-perfil{
+  position: absolute;
+  left: auto;
+  top: 130px;
+  width: 230px;
+  border: 4px solid #06BEDB;
+}
+
+h1{
+  font-family: Arial, sans-serif;
+  font-size: 50pt;
+  color: #1100FF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+  margin: 10px 0px 0px 20px;
+  border-bottom: 2px #606060 solid; /*Linha abaixo do título CURRÍCULO*/
+}
+/*0px acima, 0px direita, 0px abaixo,  0px esquerda*/
+
+/*Edição das fontes h2 para as quais estão fora do header#cabecalh*/
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 30pt;
+  color: #1100FF;
+  margin: 10px 0px 0px 20px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+h4{
+  font-family: Arial, sans-serif;
+  font-size: 20pt;
+  color: #1100FF;
+  margin: 0px 0px 0px 20px;
+}
+
+
+
+/*Formatação da tabela*/
+table#tabelaspec{
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin: 0px 20px 20px 20px; /*Centraliza a tabela ...que ocupasse ambas margens, deixei para futuras edições*/
+}
+
+/*Formatação da tabela - célula*/
+table#tabelaspec td{
+  border: 1px solid #1100FF;
+  text-align: right; /*Alinha o texto horizontalmente dentro da célula*/
+  vertical-align: top; /*Alinha o texto verticalmente dentro da célula*/
+}
+
+/*Coluna da esquerda da tabela*/
+table#tabelaspec td.ce{
+  font-family: Arial, sans-serif;
+  font-size: 30pt; /*Use pt para tamanho de fontes*/
+  color: #94E1F9;
+  text-shadow: 1px 1px 1px rgba(250,240,230,.6);
+  background-color: #1100FF;
+  column-width: 1000px;
+}
+
+
+
+/*Coluna da direita da tabela*/
+table#tabelaspec td.cd{
+  font-family: Arial, sans-serif;
+  font-size: 20pt;
+  color: #1100FF;
+  margin: 0px;
+  text-align: left; /*Alinha o texto horizontalmente dentro da célula*/
+  background-color: #CDEEF9;
+}
+
+table#tabelaspec th.ce{
+  font-family: Arial, sans-serif;
+  font-size: 40pt; /*Use pt para tamanho de fontes*/
+  color: #CDEEF9;
+  text-shadow: 1px 1px 1px rgba(250,240,230,.6);
+  background-color: #1100FF;
+}
+
+table#tabelaspec th.cc{
+  background-color: #1100FF;
+}
+
+/*Rodapé*/
+table#tabelaspec th.ci{
+  font-family: Arial, sans-serif;
+  font-size: 12pt; /*Use pt para tamanho de fontes*/
+  color: #CDEEF9;
+  background-color: #1100FF;
+}
+
+a{
+  color: #1100FF; /*Deixa o hiperlink com uma cor expecífica*/
+  text-decoration: none; /*Retira o underline do hiperlink*/
+}
+
+a:hover{
+text-decoration: underline; /*Aparece o underline apenas quando passa o mouse em cima dohiperlink*/
+}
+
+.btn{
+  width: 170px;
+  color: #ffffff;
+  background: #06BEDB;
+  border-radius: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn:hover{
+  background: #1100FF;
+}
+
+.janelatce{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+/*Tela de fundo da disciplina*/
+.tce{
+  width: 80%;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: #CDEEF9;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.fechartce{
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #1100FF;
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.fechartce:hover{
+  background: #06BEDB;
+}
+
+.janelatce.abrir{
+  display: flex;
+}
+
+@keyframes abrirmodal {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -20px, -5px);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.abrir .tce{
+  animation: abrirmodal 0.5s;
+}

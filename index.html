@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head><!-- -->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Currículo Jocimar.V.Soares</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div id="interface"> <!--Fundo da página-->
+		    
+		    <h1>CURRÍCULO</h1>
+
+		    <table style="width:100%">
+		    	<caption></caption>
+		    	<tr><td style="width:70%" id="cabecalho">
+         <!--header cria uma área, onde alinha o texto com a foto-->
+		   <h2>JOCIMAR VITORIO SOARES</h2>
+		   <h4>Brasileiro, Solteiro, 40 anos</h4>
+           <h4>Endereço: Rua Aimorés, 28 - Divinópolis, Serra - ES - CEP: 29177-233</h4>
+            <br/>
+           <h4><i class="fa fa-phone"></i> <a href="https://wa.me/qr/HL4T72SW6ARPJ1">(27)99800-1494</a></h4>
+           <h4><i class="fa fa-envelope"></i> jocimar.v.soares@outlook.com</h4>
+           <h4><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/jocimar-v-soares-7b16a752/">Jocimar V. Soares</a></h4>
+            <br/>
+            <br/>
+		    	</td><td>
+<img id="foto-perfil" src="img/img001.jpg"> <!--class="foto-perfil" foi criado uma classe para foto de perfil, se deixar só img no css vai alterar todas as imagens-->
+		    	</td></tr>
+		    </table>
+		   
+<!--Início da Tabela-->
+		<table id="tabelaspec">
+<!--tag "tr" se refere a linha-->
+<!--tag "td" se refere a coluna-->
+<!--<td rospan="2">Texto</td> irá ocupar duas linhas / <td colspan="2">Texto</td> irá ocupar duas colunas-->
+                          
+<!--Tabela-->
+		<caption></caption><!--Título da Tabela, caso queira colocar, eu deixei em branco-->
+		<tr><td class="ce">Sobre mim</td>
+		<td class="cd">Sou técnico em eletrotécnica, porém atuei na área administrativa com documentações técnicas, projetos entre outros.<br/>Tenho afinidade com as ferramentas office e em particular o Excel, criar gráficos com base em bancos de dados, projetando as informações para dashboards e resumindo os resultados para melhores decisões e ações futuras.</td></tr>
+<!--Tabela - Formação Técnica-->
+		<tr><td class="ce">Formação Técnica</td>
+		<td class="cd">Técnico em Eletrotécnica</br>
+        SENAI CNPJ:03.810.810/0004-44 / Serra - ES</br>
+        Concluído: 28/06/2018 - 1.680 horas</br>
+        <div onclick="abrirtce()" class="btn">Disciplinas</div></td></tr>
+
+    <tr><th class="cc" colspan="2">
+        <div class="janelatce" id="janelatce">
+        	<div class="tce">
+        		<button class="fechartce" id="fechartce">X</button>
+        		<h2>Técnico em Eletrotécnica</h2>
+        	<h3><li>Desenho Técnico</br>
+        		<li>Física Aplicada</br>
+        		<li>Matemática Aplicada</br>
+        		<li>Comunicação Oral e Escrita</br>
+        		<li>Eletricidade</br>
+        		<li>SMS - Segurança, Meio Ambiente e Saúde</br>
+        		<li>Eletrônica Analógica</br>
+       			<li>Instalações Elétricas</br>
+       			<li>Projeto Elétrico</br>
+       			<li>Elementos de Mecânica</br>
+       			<li>Ensaios de Máquinas Elétricas</br>
+       			<li>Eletrônica Digital</br>
+       			<li>Instalações Elétricas Industriais</br>
+       			<li>Projeto Elétrico II</br>
+       			<li>Automação Industrial</br>
+        		<li>Eficiência Energética</br>
+        		<li>Gestão e Manutenção Elétrica Industrial</br>
+        		<li>Introdução aos Sistemas Elétricos de Potência</br>
+       			<li>Eletrônica de Potência</br></h3>
+        	</div>
+        </div>
+    </th>
+<!--Tabela - Cursos-->    
+        <tr><th class="ce" colspan="2">Cursos</th></tr>
+<!--Tabela - Cursos - Power BI Essencial--> 		    
+		<tr><td class="ce">Power BI Essencial</td>
+		<td class="cd">FINDES CNPJ:28.164.937/0001-11 / EAD</br>
+        Concluído 07/08/2020 - 20 horas</br>
+        <div onclick="abrirpwb()" class="btn">Disciplinas</div></td></tr>
+       
+        <tr><th class="cc" colspan="2">
+        <div class="janelatce" id="janelapwb">
+        	<div class="tce">
+        		<button class="fechartce" id="fecharpwb">X</button>
+        		<h2>Power BI Essencial</h2>
+        	<h3><li>Componentes do Power BI</br>
+        		<li>Power Query</br>
+        		<li>Power Pivot</br>
+        		<li>Gráficos</br>
+        		<li>Obtendo dados do Excel e arquivos</br>
+        		<li>Criando um relatório no Power BI</br>
+        		<li>Publicando o relatório</br></h3>
+        	</div>
+        </div>
+    </th>
+<!--Tabela - Cursos - Informática Básica-->
+		<tr><td class="ce">Informática Básica</td>
+		<td class="cd">Projeto Sol CNPJ:32.406.626/0001-50 / Serra - ES</br>
+        Concluído 08/10/2011 - 60 horas</br>
+        <div onclick="abririnf()" class="btn">Disciplinas</div></td></tr>
+       
+        <tr><th class="cc" colspan="2">
+        <div class="janelatce" id="janelainf">
+        	<div class="tce">
+        		<button class="fechartce" id="fecharinf">X</button>
+        		<h2>Informática Básica</h2>
+        		<h3>
+<li>Introdução á informática Básica <li>Salvando as Alterações do seu Documento <li>Criando um Gráfico
+<li>Ligar e Desligar o Computador   <li>Configurando Páginas                    <li>Alterando um Gráfico
+<li>Mouse                           <li>Imprimindo um Documento                 <li>Introdução ao PowerPoint
+<li>Tela de Logon                   <li>Imprimindo um Arquivo                   <li>Inserindo um Novo Slide
+<li>Janelas                         <li>Criando um Novo Documento               <li>Formatando a Apresentação
+<li>Menu Iniciar                    <li>Fechando um Arquivo                     <li>Design do Slide
+<li>Ícone                           <li>Menu Editar                             <li>Personalizar a Apresentação
+<li>Área de Trabalho ou Desktop     <li>Menu Exibir                             <li>Transição de Slides
+<li>Papel de Parede                 <li>Inserindo Números de Páginas            <li>Configuração a Apresentação
+<li>Proteção de Tela                <li>Correção de Texto                       <li>Exibir a Apresentação
+<li>Windows Explorer                <li>Trabalhando com Tabelas                 <li>Colocando Imagens na Apresentação
+<li>Recuperação de Pasta            <li>Inserindo Imagens do Arquivo            <li>Inserindo Músicas e Vídeo
+<li>Recuperação de Arquivo          <li>Inserindo Autoforma                     <li>Salvando sua Apresentação
+<li>Introdução ao Word              <li>Inserindo Wordart                       <li>Abrir uma Apresentação
+<li>Tela Inicial do Word            <li>Introdução ao Excel
+<li>Digitando um Texto no Word      <li>Inserindo Conteúdo
+<li>Selecionando um Texto no Word   <li>Editando Contúdo
+<li>Formatando um Texto             <li>Movendo Células
+<li>Formatando um Parágrafo         <li>Autopreenchimento
+<li>Marcadores e Numeração          <li>Correção Ortográfica
+<li>Bordas e Sobreamento            <li>Salvar uma Planilha
+<li>Colunas                         <li>Abrir uma Planilha
+<li>Tabulação                       <li>Fórmulas no Excel
+<li>Capitular                       <li>Formatação de Células
+<li>Maiúscula e Minúscula           <li>Imprimindo uma Planilha
+<li>Salvando um Documento
+       			</h3>
+        	</div>
+        </div>
+    </th>
+
+<!--Tabela - Cursos - Excel-->
+<tr><td class="ce">Excel</td>
+		<td class="cd">Digirati Informática LTDA CNPJ:04.371.843/0001-55 / EAD</br>
+        Concluído 09/06/2021 - 40 horas</br>
+        <div onclick="abrirexc()" class="btn">Disciplinas</div></td></tr>
+       
+        <tr><th class="cc" colspan="2">
+        <div class="janelatce" id="janelaexc">
+        	<div class="tce">
+        		<button class="fechartce" id="fecharexc">X</button>
+        		<h2>Excel</h2>
+        	<h3><li>Manipulando Arquivos
+        		<li>Selecionando Dados
+        		<li>Formatando Planilhas
+        		<li>Dicas para Formatação de Dados
+        		<li>Classificação de Dados
+        		<li>Fórmulas Básicas
+        		<li>Funções do Excel (Parte 1)
+        		<li>Funções do Excel (Parte 2)
+        		<li>Formatação Condicional</h3>
+        	</div>
+        </div>
+    </th>
+<!--Rodapé-->
+		<tr><th class="ci" colspan="2">Atualizado:01/02/2024 - Criador: Jocimar V. Soares</th></tr>
+</div>		
+    <script src="script.js"></script>
+	</body>
+</html>
