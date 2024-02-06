@@ -118,3 +118,15 @@ function abririad(){
 		}
 	}) 
 }
+
+/*Tabela - Cursos - Letramento Digital*/
+function abrirltd(){
+	const ltd = document.getElementById('janelaltd')
+	ltd.classList.add('abrir')
+
+	ltd.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharltd' || e.target.id == 'janelaltd'){
+			ltd.classList.remove('abrir')
+		}
+	}) 
+}
