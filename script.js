@@ -72,14 +72,14 @@ function abririnf(){
 }
 
 
-/*Tabela - Cursos - Excel*/
-function abrirhtm(){
-	const exc = document.getElementById('janelahtm')
-	exc.classList.add('abrir')
+/*Tabela - Cursos - html*/
+function abrirhtml(){
+	const html = document.getElementById('janelahtml')
+	html.classList.add('abrir')
 
-	exc.addEventListener('click',(e) => {
-		if(e.target.id == 'fecharhtm' || e.target.id == 'janelahtm'){
-			exc.classList.remove('abrir')
+	html.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharhtml' || e.target.id == 'janelahtml'){
+			html.classList.remove('abrir')
 		}
 	}) 
 }
