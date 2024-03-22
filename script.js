@@ -71,6 +71,19 @@ function abririnf(){
 	}) 
 }
 
+
+/*Tabela - Cursos - Excel*/
+function abrirhtm(){
+	const exc = document.getElementById('janelahtm')
+	exc.classList.add('abrir')
+
+	exc.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharhtm' || e.target.id == 'janelahtm'){
+			exc.classList.remove('abrir')
+		}
+	}) 
+}
+
 /*Tabela - Cursos - Excel*/
 function abrirexc(){
 	const exc = document.getElementById('janelaexc')
