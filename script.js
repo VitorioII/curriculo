@@ -143,3 +143,27 @@ function abrirltd(){
 		}
 	}) 
 }
+
+/*Tabela - Cursos - Algoritmo*/
+function abriralt(){
+	const alt = document.getElementById('janelaalt')
+	alt.classList.add('abrir')
+
+	alt.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharalt' || e.target.id == 'janelaalt'){
+			alt.classList.remove('abrir')
+		}
+	}) 
+}
+
+/*Tabela - Cursos - Balconista de Farmácia*/
+function abrirbf(){
+	const bf = document.getElementById('janelabf')
+	bf.classList.add('abrir')
+
+	bf.addEventListener('click',(e) => {
+		if(e.target.id == 'fecharbf' || e.target.id == 'janelabf'){
+			bf.classList.remove('abrir')
+		}
+	}) 
+}
